@@ -1,0 +1,182 @@
+.container{
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    z-index: 2;
+
+    height: 70vh;
+
+    background-color: rgb(140, 117, 163);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 3vw 0 0 3vw;
+    width: 5vw;
+
+    transition: width 0.25s;
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 5vh;
+    padding: 5vh 0;
+    
+}
+.links, .links *{
+    background-color: transparent;
+}
+.img{
+   width: 3vw; 
+   height: 3vw;
+   fill: ghostwhite;
+
+   
+}
+.link{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.205);
+
+    padding: 1vh;
+    transition: background-color 0.15s;
+}
+.link:hover{
+    background-color: rgba(0, 0, 0, 0.410);
+}
+.darker{
+    background-color: rgba(0, 0, 0, 0.410);
+}
+
+.expand{
+    width: 40vw;
+}
+
+.sideways{
+    flex: 0 1 auto;
+    flex-direction: row;
+    align-items: stretch;
+    height: 10vh;
+    width: 100%;
+    padding: 0 5vh;
+
+    border-top-left-radius: 3vw;
+    background-color: rgba(0, 0, 0, 0.153);
+}
+.items{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 2vh 0;
+    overflow-x: auto;
+
+    margin: 0 1.5vw;
+}
+
+.item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: ghostwhite;
+    width: max-content;
+    border-radius: 3.5vh;
+    max-width: 100%;
+
+    padding: 4vh;
+    border-style: solid;
+    border-color: grey;
+}
+
+.parg{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.quantity{
+    position: absolute;
+    bottom: -2vh;
+    left: 2vh;
+    z-index: 1;
+
+    padding: 1vh;
+
+    display: flex;
+    gap: 0.5vh;
+
+    background-color: rgb(112, 199, 207);
+    border-radius: 1vh;
+    border-style: solid;
+    border-color: gray;
+}
+.inp{
+    width: min-content;
+    field-sizing: content;
+    background-color: ghostwhite;
+}
+
+.bubble{
+    padding: 0.5vh;
+    height: 3vh;
+
+    border-radius: 1vh;
+    border-style: solid;
+    border-color: gray;
+}
+.green{
+    width: 3vh;
+    background-color: rgb(2, 210, 2);
+}
+.green:hover{
+    background-color: rgb(2, 182, 2);
+}
+.red{
+    width: 3vh;
+    background-color: rgb(239, 2, 2);
+}
+.red:hover{
+    background-color: rgb(211, 2, 2);
+}
+
+.total{
+    padding: 0 5vh;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.153);
+    border-bottom-left-radius: 3vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span, .checkout{
+    background-color: rgba(248, 248, 255, 0.881);
+    padding: 1vh;
+    border-radius: 2vh;
+    border-style: solid;
+    border-color: grey;
+}
+.checkout{
+    background-color: rgba(248, 248, 255, 0.881);
+    padding: 1.75vh;
+    border-radius: 2vh;
+    font-size: large;
+
+    transition: background-color 0.15s;
+}
+.checkout:hover{
+    background-color: rgba(190, 190, 193, 0.922);
+}

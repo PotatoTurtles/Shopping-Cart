@@ -12,7 +12,7 @@ let router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
-      {path:'home', element:<Home />,},
+      {index:true, element:<Home />},
       {path:'store', element: <Store />,},
     ],
   },

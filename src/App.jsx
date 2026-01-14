@@ -4,13 +4,14 @@ import './App.css'
 import Checkout from './Checkout';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cart,setCart] = useState([]);
+  const [isHighlighted,setIsHighlighted] = useState([1,0,0]);
 
   return (
-    <div>
-      <Outlet />
+    <div >
+      <Outlet context={[cart,setCart,isHighlighted,setIsHighlighted]}/>
       <div>
-        <Checkout />
+        <Checkout cart={cart} setCart={setCart} isHighlighted={isHighlighted} setIsHighlighted={setIsHighlighted}/>
       </div>
     </div>
   )
